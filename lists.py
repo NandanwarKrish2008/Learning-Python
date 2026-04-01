@@ -22,3 +22,5 @@ print(food);
 
 food.sort(); # sorts the list in ascending order
 print(food);
+
+food.insert(0, "Sandwich"); # inserts "Sandwich" at index 0
