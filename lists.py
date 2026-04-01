@@ -1,4 +1,5 @@
 # Lists in python
+# LISTS ARE MUTABLE (CAN BE CHANGED) AND ORDERED (MAINTAIN THE ORDER OF ELEMENTS)
 
 food = ["Pizza", "Burger", "Pasta", "Salad", "Sushi"];
 
