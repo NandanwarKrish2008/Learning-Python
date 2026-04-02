@@ -22,3 +22,9 @@ print(student["city"]);
 
 student["city"] = "Ahmedabad";
 print(student["city"]);
+
+
+student["FavSubject"] = "Maths";
+student["Country"] = "India";
+
+print(student);
