@@ -1,0 +1,8 @@
+# Print even numbers from 1 to 50
+
+i = 1;
+
+while i <= 50:
+    if i % 2 == 0:
+        print(i, "is an even number");
+    i += 1;
