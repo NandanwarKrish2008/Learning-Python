@@ -1,9 +1,9 @@
 # Pattern using while loop
 # *
-# **
-# ***
-# ****
-# *****
+# * *
+# * * *
+# * * * *
+# * * * * *
 
 # CLASSICAL METHOD
 
