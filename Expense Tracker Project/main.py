@@ -29,3 +29,9 @@ while True:
     # View Total Expenses
     elif choice == 2:
         pass; 
+
+    elif choice == 3:
+        pass; 
+
+    elif choice == 4:
+        pass; 
