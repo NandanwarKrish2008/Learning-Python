@@ -15,7 +15,7 @@ while True:
 
     if choice == 1:
         date = input("Enter expense Date (DD-MM-YYYY): "); 
-        category = input("Enter expense ccatrgory: "); 
+        category = input("Enter expense category (Food, Games, Travel, etc): "); 
         description = input("Enter short description: "); 
         amount = float(input("Enter expense amount: ")); 
 
