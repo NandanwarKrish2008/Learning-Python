@@ -13,6 +13,7 @@ while True:
 
     choice = int(input("Enter your choice: ")); 
 
+    # Add Expense
     if choice == 1:
         date = input("Enter expense Date (DD-MM-YYYY): "); 
         category = input("Enter expense category (Food, Games, Travel, etc): "); 
@@ -25,3 +26,6 @@ while True:
                    "amount" : amount};
         expenses.append(expense);
         print("✅Expense added successfully!");
+    # View Total Expenses
+    elif choice == 2:
+        pass; 
