@@ -28,10 +28,25 @@ while True:
         print("✅Expense added successfully!");
     # View Total Expenses
     elif choice == 2:
-        pass; 
+        if len(expenses) == 0:
+            print("No expenses added yet!"); 
+        else:
+            print("=== Total Expenses ===")
+            count = 1;
+            for expense in expenses:
+                print(f"Expense number {count} -> {expense["date"]}, {expense["category"]}, {expense["description"]}, ${expense["amount"]}");
+                count += 1;
 
     elif choice == 3:
-        pass; 
+        total = 0;
+        for expense in expenses:
+            total += expense["amount"]; 
+        
+        print(f"Total Spending: ${total}");
 
     elif choice == 4:
-        pass; 
+        print("Thank you for using the Expense Tracker App!");
+        break;
+
+    else:
+        print("Invalid choice! Please try again.");
