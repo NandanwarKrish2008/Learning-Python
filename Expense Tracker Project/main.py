@@ -1,6 +1,6 @@
 # Expense Tracker Project
 
-expenses = [] #Lists of expenses in form of dictionaries
+Expenses_List = [] #Lists of expenses in form of dictionaries
 
 print("WELCOME TO THE EXPENSE TRACKER APP") 
 
@@ -24,29 +24,30 @@ while True:
                    "Category" : category,
                    "Description" : description,
                    "Amount" : amount}
-        expenses.append(expense)
+        Expenses_List.append(expense)
         print("✅Expense added successfully!")
     # View Total Expenses
     elif choice == 2:
-        if len(expenses) == 0:
+        if len(Expenses_List) == 0:
             print("No expenses added yet!") 
         else:
             print("=== Total Expenses ===")
             count = 1
-            for expense in expenses:
-                print(f"Expense number {count} -> {expense["Date"]}, {expense["Category"]}, {expense["Description"]}, ${expense["Amount"]}")
+            for expense in Expenses_List:
+                print(f"Expense number {count} -> {expense['Date']}, {expense['Category']}, {expense['Description']}, ${expense['Amount']}")
                 count += 1
 
     elif choice == 3:
-        total = 0;
-        for expense in expenses:
+        total = 0
+        for expense in Expenses_List:
             total += expense["Amount"] 
         
         print(f"Total Spending: ${total}")
 
     elif choice == 4:
         print("Thank you for using the Expense Tracker App!")
-        break;
+        break
 
     else:
         print("Invalid choice! Please try again.")
+
