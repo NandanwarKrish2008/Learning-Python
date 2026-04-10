@@ -1,4 +1,4 @@
-# Create file using python code
+# Create file using Python code
 
 # open("name.txt", "x")
 
