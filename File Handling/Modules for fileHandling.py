@@ -1,11 +1,17 @@
 import shutil # For copy paste the content of fie into another one
 import os #For Rename file
 
-# Renaming the File
+# RENAMING THE FILE
 
 # os.rename("file.txt", "main.txt")
 
 
-# Copying the content in another file
+# COPY THE CONTENT OF FILE IN ANOTHER
 
-shutil.copy("main.txt", "file.txt")
+# shutil.copy("main.txt", "file.txt")
+
+
+# DELETING THE FILE
+
+open("main2.txt", "w")
+os.remove("main2.txt")
