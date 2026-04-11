@@ -1,0 +1,5 @@
+Python is amazing
+There are alot of topics in Python
+It is a programming Language
+It is used for AI/ML and Ethical Hacking
+It is easy to learn but some difficult concepts are there
