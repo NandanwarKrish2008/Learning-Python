@@ -10,5 +10,5 @@ try:
         print(line3)
         print(line4)
         print(line5)
-except:
+except FileNotFoundError:
     print("File not found.")
