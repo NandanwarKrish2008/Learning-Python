@@ -19,15 +19,21 @@ Student1.name = "Krish"
 Student1.rollNO = "HSC01"
 print(Student1.name)
 print(Student1.rollNO)
+print(Student1.std)
+print(Student1.stream)
 
 Student2 = student()
 Student2.name = "Rakesh"
 Student2.rollNO = "HSC02"
 print(Student2.name)
 print(Student2.rollNO)
+print(Student2.std)
+print(Student2.stream)
 
 Student3 = student()
 Student3.name = "Mukesh"
 Student3.rollNO = "HSC03"
 print(Student3.name)
 print(Student3.rollNO)
+print(Student3.std)
+print(Student3.stream)
