@@ -30,7 +30,7 @@ def newFile():
 
 def openFile():
     filePath = filedialog.askopenfilename(
-        defaultextension=".txt"
+        defaultextension=".txt",
         filetypes=[("Text Files", "*.txt")]
     )
 
@@ -38,5 +38,34 @@ def openFile():
         with open(filePath, "r") as file:
             text.delete(1.0, tk.END)
             text.insert(tk.END, file.read)
+
+# FUNCTION-03 :- Save the file
+
+def saveFile():
+    filePath = filedialog.asksaveasfilename(
+        defaultextension=".txt",
+        filetypes=[("Text Files", "*.txt")]
+    )
+
+    if filePath:
+        with open(filePath,"w") as file:
+            file.write(text.get(1.0, tk.END))
+
+    messagebox.showinfo("info", "File saved successfully")
+
+# MENU
+
+menu = tk.Menu(root)
+root.config(menu=menu)
+
+fileMenu = tk.Menu(menu)
+
+menu.add_cascade(label = "File", menu = fileMenu)
+
+fileMenu.add_command(label = "New File", command = newFile)
+fileMenu.add_command(label = "Open File", command = openFile)
+fileMenu.add_command(label = "Save File", command = saveFile)
+fileMenu.add_separator()
+fileMenu.add_command(label = "Exit", command = root.quit)
 
 root.mainloop() # Starts and keeps the window open
