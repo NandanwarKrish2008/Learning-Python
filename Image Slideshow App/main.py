@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 
 root = tk.Tk()
 root.title("Image Slideshow")
-root.geometry("900x900")
+root.geometry("1080x1920")
 
 # List of image path
 
