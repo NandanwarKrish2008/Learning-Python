@@ -34,4 +34,9 @@ def openFile():
         filetypes=[("Text Files", "*.txt")]
     )
 
+    if filePath:
+        with open(filePath, "r") as file:
+            text.delete(1.0, tk.END)
+            text.insert(tk.END, file.read)
+
 root.mainloop() # Starts and keeps the window open
