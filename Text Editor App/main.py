@@ -26,4 +26,12 @@ text.pack(expand=True,fill=tk.BOTH)
 def newFile():
     text.delete(1.0, tk.END)
 
+# FUNCTION-02 :- To open a new file
+
+def openFile():
+    filePath = filedialog.askopenfilename(
+        defaultextension=".txt"
+        filetypes=[("Text Files", "*.txt")]
+    )
+
 root.mainloop() # Starts and keeps the window open
