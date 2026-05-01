@@ -20,4 +20,10 @@ imagePaths = [
     r"C:\Users\Dell\Desktop\Slideshow\image7.jpg",
 ]
 
+imageSize = (1080, 1920)
+
 images = []
+
+for path in imagePaths:
+    img = Image.open(path)
+    img = img.resize(imageSize)
